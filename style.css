@@ -1,0 +1,212 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    background-image: url(./images/bg-intro-mobile.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #FF7979;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Poppins";
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+
+.header-text{
+    width: 327px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffff;
+    text-align: center;
+    gap:16px;
+    margin: 88px 0 64px;
+}
+
+h1{
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.try-free{
+    width: 327px;
+    height: 55px;
+    border-radius: 10px;
+    background-color: #5E54A4;
+    color: #ffff;
+    font-size: 15px;
+    text-align: center;
+    line-height: 26px;
+    box-shadow: 0 10px 3px rgb(0, 0, 0, 0.15);
+    margin-bottom: 24px;
+}
+
+.try{
+    font-weight: 500;
+}
+.after{
+    font-weight: 400;
+}
+
+.info-container{
+    width: 327px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+    gap: 16px;
+    margin-bottom: 88px;
+    box-shadow: 0 10px 3px rgb(0, 0, 0, 0.15);
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.box{
+    width: 279px;
+    height: 56px;
+    /* font-family:'Poppins'; */
+    background-color: #ffff;
+    border-style: solid;
+    border-color: #DEDEDE;
+    border-radius: 5px ;
+    color: #3D3B48;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.25px;
+    padding: 0 20px;
+}
+
+.button{
+    width: 279px;
+    height: 56px;
+    background-color: #38CC8B;
+    color: #ffff;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    border-style: solid;
+    border-radius: 5px ;
+    border: none;
+    padding: 0 45px;
+    box-shadow: inset 0px -5px 1px 0px rgba(0, 0, 0, 0.09);
+    cursor: pointer;
+}
+
+.error{
+    display: none;
+    font-size: 11px;
+    font-weight: 500;
+    color: #FF7979;
+}
+
+.done{
+    display: none;
+    border-color: red;
+}
+
+.error-icon{
+    position: absolute;
+    margin: 15px;
+    
+}
+
+.fotter-text{
+    width: 250px;
+}
+
+.grey-text{ 
+    color: #BAB7D4;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 21px;
+    text-align: center;
+}
+
+.red-text{
+    color: #FF7979;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+
+@media screen and (min-width:768px){
+       body{
+        background-image: none;
+        background-image: url("./images/bg-intro-desktop.png");
+        background-size: 100%;
+       }
+    .container{
+        display: flex;
+        flex-direction: row;
+        gap: 45px;
+    }
+
+    .info-container{
+        width: 540px;
+        height: 474px;
+        margin-bottom: auto;
+    }
+
+    .box{
+        width: 460px;
+        height: 56px;
+    }
+    
+    .try-free{
+        width: 540px;
+        height: 60px;
+        text-align: center;
+        padding: 15px
+    }
+
+    .button{
+        width: 460px;
+    }
+
+    .header-text{
+         width: 525px;
+         text-align: left;
+         display: flex;
+        align-items: flex-start;
+     }
+
+     h1{
+        font-size: 50px;
+        line-height: 55px;
+     }
+
+     p{
+        width: 525px;
+        font-size: 16px;
+        line-height: 26px;
+
+     }
+
+
+    }
