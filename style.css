@@ -19,7 +19,6 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-   
 }
 
 
@@ -48,7 +47,6 @@ p{
 }
 
 .try-free{
-    width: 327px;
     height: 55px;
     border-radius: 10px;
     background-color: #5E54A4;
@@ -60,10 +58,16 @@ p{
     margin-bottom: 24px;
 }
 
+.span-text{
+    display: flex;
+    flex-direction: column;
+}
+
 .try{
     font-weight: 500;
 }
-.after{
+
+.then{
     font-weight: 400;
 }
 
@@ -90,7 +94,6 @@ p{
 .box{
     width: 279px;
     height: 56px;
-    /* font-family:'Poppins'; */
     background-color: #ffff;
     border-style: solid;
     border-color: #DEDEDE;
@@ -118,22 +121,20 @@ p{
     cursor: pointer;
 }
 
+
+
 .error{
     display: none;
     font-size: 11px;
     font-weight: 500;
     color: #FF7979;
-}
-
-.done{
-    display: none;
-    border-color: red;
+    margin-top: 7px;
 }
 
 .error-icon{
+    display: none;
     position: absolute;
     margin: 15px;
-    
 }
 
 .fotter-text{
@@ -154,13 +155,25 @@ p{
     font-weight: 700;
 }
 
+@media screen and (min-width:500px){
+    body{
+        background-repeat: repeat;
+    }
 
-@media screen and (min-width:768px){
+}
+
+
+@media screen and (min-width:1200px){
        body{
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-image: none;
         background-image: url("./images/bg-intro-desktop.png");
         background-size: 100%;
        }
+
     .container{
         display: flex;
         flex-direction: row;
@@ -169,7 +182,6 @@ p{
 
     .info-container{
         width: 540px;
-        height: 474px;
         margin-bottom: auto;
     }
 
@@ -178,15 +190,21 @@ p{
         height: 56px;
     }
     
-    .try-free{
+    .try-free {
         width: 540px;
         height: 60px;
-        text-align: center;
-        padding: 15px
+        padding: 15px;
+    }
+    .span-text{
+        flex-direction: row;
+        justify-content: center;
     }
 
     .button{
         width: 460px;
+        height: 56px;
+        text-align: center;
+        padding: 15px
     }
 
     .header-text{
@@ -200,13 +218,5 @@ p{
         font-size: 50px;
         line-height: 55px;
      }
-
-     p{
-        width: 525px;
-        font-size: 16px;
-        line-height: 26px;
-
-     }
-
 
     }
